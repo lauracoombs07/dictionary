@@ -1,177 +1,177 @@
 <!DOCTYPE html>
 <html>
-        <figure>
-                <center><img src="http://www.abajournal.com/images/main_images/words.jpg"
-                     width="800"
-                     height="300">
-                </center>
-              
-        </figure>
-<head>
-    <title>My Dictionary</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+  <a href="https://dictionary.com">Go to Dictionary.com</a>
 
-    <div class="header">
-        <h1>English Dictionary</h1>
-    </div>
+  <figure>
+    <center>
+      <a href="#"
+        ><img
+          src="http://www.abajournal.com/images/main_images/words.jpg"
+          alt="Dictionary Picture"
+          width="800"
+          height="300"
+      /></a>
+    </center>
+  </figure>
+  <head>
+    <title>My Dictionary</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header"><h1>English Dictionary</h1></div>
 
     <div class="wrapper">
-        <div class="words">
-            <input type="text" id ="search" placeholder="search...">
-            <button onclick="search()">Go</button>
+      <div class="words">
+        <input type="text" id="search" placeholder="search..." />
+        <button onclick="search()">Go</button>
 
-            <ul id="word_list">
-                
-            </ul>
+        <ul id="word_list"></ul>
+      </div>
+      <div class="word">
+        <h3 id="word_text"></h3>
+        <p id="definition"></p>
 
-        </div>
-        <div class="word">
-            <h3 id="word_text"></h3>
-            <p id="definition"></p>
+        <br />
 
-            <br>
-
-            <h3>synomyms:</h3>
-            <li id="related"></li>
-        </div>
+        <h3>synomyms:</h3>
+        <li id="related"></li>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script type="text/javascript">
-    var dictionary = [
-                        {
-                            word:"bombinate",
-                            def:"to make a humming or buzzing noise",
-                            rel:["reverberate","whisper","strum"]
-                        },
-                        {
-                            word:"cromulent",
-                            def:"appearing legitimate but actually being spurious",
-                            rel:["mango","pear","guava"]
-                        },
-                        {
-                            word:"defenestration",
-                            def:"the act of throwing someone out of a window",
-                            rel:["violence","anger","conflict"]
-                        },
-                        {
-                            word:"effervescence",
-                            def:"bubbles in a liquid",
-                            rel:["sparkle","exhilaration","happiness"]
-                        },
-                        {
-                            word:"ephemeral",
-                            def:"lasting for a very short time",
-                            rel:["fleeting","transient","momentary"]
-                        },
-                        {
-                            word:"epiphany",
-                            def:"a moment of sudden revelation",
-                            rel:["vision","discovery","insight"]
-                        },
-                        {
-                            word:"ethereal",
-                            def:"extremely delicate, light, not of this world",
-                            rel:["intangible","exquisite","insubstantial"]
-                        },
-                        {
-                            word:"ineffable",
-                            def:"too great to be expressed in words",
-                            rel:["unspeakable","indescribable","transcendental"]
-                        },
-                        {
-                            word:"mellifluous",
-                            def:"a sound that is sweet ans smooth, pleasing to hear",
-                            rel:["dulcet","symphonious","soothing"]
-                        },
-                        {
-                            word:"nefarious",
-                            def:"wicked, villainous, despicable",
-                            rel:["outrageous","odious","degenerate"]
-                        },
-                        {
-                            word:"petrichor",
-                            def:"the pleasant, earthy smell after rain",
-                            rel:["wet","earthy","nature"]
-                        },
-                        {
-                            word:"phosphenes",
-                            def:"the light and colors produced by rubbing your eyes",
-                            rel:["electrical","excitation","luminous"]
-                        },
-                        {
-                            word:"somnambulist",
-                            def:"a person who sleepwalks",
-                            rel:["hypnosis","trance","noctambulism"]
-                        },
-                        {
-                            word:"sonder",
-                            def:"the realization that each passerby has a life as vivid and complex as your own",
-                            rel:["meditate","reflect","ruminate"]
-                        },
-                        {
-                            word:"supine",
-                            def:"lying face upwards",
-                            rel:["horizontal","lackadaisical","listless"]
-                        },
-                        {
-                            word:"vellichor",
-                            def:"the strange wistfulness of used bookshops",
-                            rel:["shop","books","silence"]
-                        },
+  var dictionary = [
+    {
+      word: "bombinate",
+      def: "to make a humming or buzzing noise",
+      rel: ["reverberate", "whisper", "strum"]
+    },
+    {
+      word: "cromulent",
+      def: "appearing legitimate but actually being spurious",
+      rel: ["mango", "pear", "guava"]
+    },
+    {
+      word: "defenestration",
+      def: "the act of throwing someone out of a window",
+      rel: ["violence", "anger", "conflict"]
+    },
+    {
+      word: "effervescence",
+      def: "bubbles in a liquid",
+      rel: ["sparkle", "exhilaration", "happiness"]
+    },
+    {
+      word: "ephemeral",
+      def: "lasting for a very short time",
+      rel: ["fleeting", "transient", "momentary"]
+    },
+    {
+      word: "epiphany",
+      def: "a moment of sudden revelation",
+      rel: ["vision", "discovery", "insight"]
+    },
+    {
+      word: "ethereal",
+      def: "extremely delicate, light, not of this world",
+      rel: ["intangible", "exquisite", "insubstantial"]
+    },
+    {
+      word: "ineffable",
+      def: "too great to be expressed in words",
+      rel: ["unspeakable", "indescribable", "transcendental"]
+    },
+    {
+      word: "mellifluous",
+      def: "a sound that is sweet ans smooth, pleasing to hear",
+      rel: ["dulcet", "symphonious", "soothing"]
+    },
+    {
+      word: "nefarious",
+      def: "wicked, villainous, despicable",
+      rel: ["outrageous", "odious", "degenerate"]
+    },
+    {
+      word: "petrichor",
+      def: "the pleasant, earthy smell after rain",
+      rel: ["wet", "earthy", "nature"]
+    },
+    {
+      word: "phosphenes",
+      def: "the light and colors produced by rubbing your eyes",
+      rel: ["electrical", "excitation", "luminous"]
+    },
+    {
+      word: "somnambulist",
+      def: "a person who sleepwalks",
+      rel: ["hypnosis", "trance", "noctambulism"]
+    },
+    {
+      word: "sonder",
+      def:
+        "the realization that each passerby has a life as vivid and complex as your own",
+      rel: ["meditate", "reflect", "ruminate"]
+    },
+    {
+      word: "supine",
+      def: "lying face upwards",
+      rel: ["horizontal", "lackadaisical", "listless"]
+    },
+    {
+      word: "vellichor",
+      def: "the strange wistfulness of used bookshops",
+      rel: ["shop", "books", "silence"]
+    }
+  ];
 
-    ];
-
-//fill the dictionary with words
-init = function(){
+  //fill the dictionary with words
+  init = function() {
     for (var i = 0; i < dictionary.length; i++) {
-        document.getElementById('word_list').innerHTML += "<li onclick='show(" + i + ")'>" + 
-            dictionary[i].word + "</li>";
-        }
-}
-//call the init function when page loads
-init();
+      document.getElementById("word_list").innerHTML +=
+        "<li onclick='show(" + i + ")'>" + dictionary[i].word + "</li>";
+    }
+  };
+  //call the init function when page loads
+  init();
 
-//display a word, it's definition and related words
-show = function(i){
-    document.getElementById('word_text').innerHTML = dictionary[i].word;
-    document.getElementById('definition').innerHTML = dictionary[i].def;
+  //display a word, it's definition and related words
+  show = function(i) {
+    document.getElementById("word_text").innerHTML = dictionary[i].word;
+    document.getElementById("definition").innerHTML = dictionary[i].def;
 
     var list = "";
 
     for (var j = 0; j < dictionary[i].rel.length; j++) {
-        list += "<li>" + dictionary[i].rel[j] + "</li>";
-        document.getElementById('related').innerHTML = list;
+      list += "<li>" + dictionary[i].rel[j] + "</li>";
+      document.getElementById("related").innerHTML = list;
     }
+  };
+  //show first word in the dicitonary whem the dictionary loads
+  show(0);
 
-}
-//show first word in the dicitonary whem the dictionary loads
-show(0);
-
-//search functionality
-search = function(){
-    query = document.getElementById('search').value;
+  //search functionality
+  search = function() {
+    query = document.getElementById("search").value;
 
     if (query == "") {
-        return;
+      return;
     }
 
     found = -1; //initialize found to false
-    
+
     for (var i = 0; i < dictionary.length; i++) {
-        if (query == dictionary[i].word) {
-            found = i;
-            break;
-        }else {
-            document.getElementById('word_text').innerHTML = "Word not found";
-            document.getElementById('definition').innerHTML = "The word you entered is not found in our dictionary";
-            document.getElementById('related').innerHTML = "No related words";
-        }
+      if (query == dictionary[i].word) {
+        found = i;
+        break;
+      } else {
+        document.getElementById("word_text").innerHTML = "Word not found";
+        document.getElementById("definition").innerHTML =
+          "The word you entered is not found in our dictionary";
+        document.getElementById("related").innerHTML = "No related words";
+      }
     }
     if (found >= 0) {
-        show(found);
+      show(found);
     }
-}
+  };
 </script>
