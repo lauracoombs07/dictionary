@@ -1,0 +1,83 @@
+var dictionary = [
+        {
+          word: "bombinate",
+          def: "to make a humming or buzzing noise",
+          rel: ["reverberate", "whisper", "strum"]
+        },
+        {
+          word: "cromulent",
+          def: "appearing legitimate but actually being spurious",
+          rel: ["mango", "pear", "guava"]
+        },
+        {
+          word: "defenestration",
+          def: "the act of throwing someone out of a window",
+          rel: ["violence", "anger", "conflict"]
+        },
+        {
+          word: "effervescence",
+          def: "bubbles in a liquid",
+          rel: ["sparkle", "exhilaration", "happiness"]
+        },
+        {
+          word: "ephemeral",
+          def: "lasting for a very short time",
+          rel: ["fleeting", "transient", "momentary"]
+        },
+        {
+          word: "epiphany",
+          def: "a moment of sudden revelation",
+          rel: ["vision", "discovery", "insight"]
+        },
+        {
+          word: "ethereal",
+          def: "extremely delicate, light, not of this world",
+          rel: ["intangible", "exquisite", "insubstantial"]
+        },
+        {
+          word: "ineffable",
+          def: "too great to be expressed in words",
+          rel: ["unspeakable", "indescribable", "transcendental"]
+        },
+        {
+          word: "mellifluous",
+          def: "a sound that is sweet ans smooth, pleasing to hear",
+          rel: ["dulcet", "symphonious", "soothing"]
+        },
+        {
+          word: "nefarious",
+          def: "wicked, villainous, despicable",
+          rel: ["outrageous", "odious", "degenerate"]
+        },
+        {
+          word: "petrichor",
+          def: "the pleasant, earthy smell after rain",
+          rel: ["wet", "earthy", "nature"]
+        },
+        {
+          word: "phosphenes",
+          def: "the light and colors produced by rubbing your eyes",
+          rel: ["electrical", "excitation", "luminous"]
+        },
+        {
+          word: "somnambulist",
+          def: "a person who sleepwalks",
+          rel: ["hypnosis", "trance", "noctambulism"]
+        },
+        {
+          word: "sonder",
+          def:
+            "the realization that each passerby has a life as vivid and complex as your own",
+          rel: ["meditate", "reflect", "ruminate"]
+        },
+        {
+          word: "supine",
+          def: "lying face upwards",
+          rel: ["horizontal", "lackadaisical", "listless"]
+        },
+        {
+          word: "vellichor",
+          def: "the strange wistfulness of used bookshops",
+          rel: ["shop", "books", "silence"]
+        }
+      ];
